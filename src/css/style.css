@@ -1,0 +1,114 @@
+.container {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+
+}
+form {
+    background-color: white;
+    border-radius: 3px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgb(65, 112, 101);
+
+}
+.taskInput {
+    border: none;
+    border-bottom: 1px solid rgb(65, 112, 101);
+    width: 100%;
+    max-width: 300px;
+    font-size: 18px;
+    padding: 5px 5px;
+
+}
+.taskInput:active,
+.taskInput:focus {
+    outline: 0;
+}
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    border-color: rgb(65, 112, 101);
+
+}
+input[type='checkbox']:after {
+    content: " ";
+    display: inline-block;
+    visibility: visible;
+    width: 20px;
+    height: 20px;
+  }
+  
+  input[type='checkbox']:checked:after {
+      position: relative;
+    content: "\2714";
+    bottom: 5px;
+    left: 0;
+    border-radius: 3px;
+
+
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(50, 204, 165);
+  }
+button{
+    border: none;
+    margin: 0;
+    padding: 2px;
+    background: none;
+    
+}
+.removeButton {
+    display: flex;
+}
+.addButton {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(50, 204, 165);
+    border: 1px solid rgb(34, 82, 110);
+    border-radius: 2px;
+    color: white;
+    font-size: 32px;
+}
+.addButton p {
+    margin-bottom: auto;
+    line-height: 34px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+
+}
+
+li {
+    border-radius: 3px;
+    background-color: white !important;
+    margin: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgb(65, 112, 101);
+
+}
+.isComplete {
+    text-decoration: line-through;
+    color: rgb(201, 75, 52);
+    opacity: 70%;
+}
+svg {
+    width: 20px;
+    height: 20px;
+    margin: auto 0;
+}
+
+
